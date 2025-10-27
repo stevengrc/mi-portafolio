@@ -1,0 +1,15 @@
+/* index.css - Para Tailwind v4 */
+@import "tailwindcss";
+
+/* Opcional: Si necesitas preflight (similar a base) */
+@import "tailwindcss/preflight";
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #111827;
+}
+
+

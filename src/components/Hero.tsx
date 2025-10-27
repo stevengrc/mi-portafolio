@@ -2,9 +2,10 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 export default function Hero() {
-  const heroRef = useRef(null);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+     if (!heroRef.current) return;
     gsap.fromTo(
       heroRef.current.children,
       { y: 40, opacity: 0 },

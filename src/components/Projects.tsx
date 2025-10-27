@@ -1,13 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
-  const sectionRef = useRef(null);
-
+  const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+     if (!sectionRef.current) return;
     gsap.fromTo(
       sectionRef.current.children,
       { y: 80, opacity: 0 },

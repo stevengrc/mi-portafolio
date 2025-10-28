@@ -1,13 +1,16 @@
+import tailwindcss from '@tailwindcss/postcss'
+
 export default {
-  plugins: {
-    '@tailwindcss/postcss': {
+  plugins: [
+    tailwindcss({
       content: [
         './index.html',
         './src/**/*.{js,ts,jsx,tsx}',
       ],
-        safelist: [
-        { pattern: /./ }
-      ]
-    },
-  },
+      // Configuración mínima necesaria
+      theme: {
+        extend: {},
+      },
+    })
+  ]
 }

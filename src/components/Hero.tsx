@@ -40,7 +40,7 @@ export default function Hero() {
         </p>
         <a
           href="#projects"
-          className="mt-8 inline-block bg-cyan-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 transition-all duration-500 ease-in-out"
+          className="mt-8 inline-block bg-cyan-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-400   ease-in-out"
         >
           Ver mis proyectos
         </a>

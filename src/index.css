@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 /* Opcional: Si necesitas preflight (similar a base) */
-@import "tailwindcss/preflight";
+
 
 html {
   scroll-behavior: smooth;

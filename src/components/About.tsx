@@ -18,9 +18,9 @@ export default function About() {
             Universidad Nacional Autónoma de Honduras (UNAH)
           </span>
           . Tengo experiencia en desarrollo web{" "}
-          <span className="text-cyan-400">full stack</span>, diseño de bases de datos y la
+          <span className="text-cyan-400"><i>full stack</i></span>, diseño de bases de datos y la
           integración de tecnologías modernas como{" "}
-          <span className="text-cyan-400">Node.js, React y PostgreSQL</span>.
+          <span className="text-cyan-400"><i>Node.js, React, FastAPI y PostgreSQL</i></span>.
         </p>
         <p className="text-gray-400">
           Me apasiona crear soluciones digitales innovadoras, eficientes y centradas en la

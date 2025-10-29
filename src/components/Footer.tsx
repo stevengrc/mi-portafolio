@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
 
         {/* Íconos */}
-        <div className="flex space-x-6 text-2xl">
+        <div className="flex space-x-5 text-2xl">
           <a
             href="https://github.com/stevengrc"
             target="_blank"

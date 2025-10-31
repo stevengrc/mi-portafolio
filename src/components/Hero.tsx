@@ -68,6 +68,7 @@ export default function Hero() {
       
       <div className="z-10 px-6">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white drop-shadow-lg">
+          <span className="text-cyan-400 font-mono bg-cyan-900/30 px-2 py-1 rounded-lg">&lt;&gt;</span>
           Hola, soy <span className="text-cyan-400">Steven Garcia</span>
         </h1>
         <p className="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto drop-shadow-md">

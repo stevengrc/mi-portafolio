@@ -81,7 +81,7 @@ export default function Piano() {
         
           <div className="relative flex justify-center">
             <div 
-              className="relative bg-linear-to-b from-amber-900 to-amber-800 p-4 rounded-lg"
+              className="relative bg-linear-to-b from-sky-900 to-sky-800 p-4 rounded-lg"
               style={{ display: 'grid', gridTemplateColumns: `repeat(${notes.filter(n => !n.sharp).length}, 56px)` }}
             >
              
@@ -101,7 +101,7 @@ export default function Piano() {
                 <button
                   onClick={() => playNote("C#4")}
                   className="absolute bg-gray-900 shadow-lg text-white h-32 w-8 rounded-b-md active:bg-gray-700 transition-all duration-75 z-20 flex items-end justify-center pb-2 hover:brightness-110"
-                  style={{ left: '57px' }}
+                  style={{ left: '57px', top:'16px' }}
                 >
                 
                 </button>
@@ -110,7 +110,7 @@ export default function Piano() {
                 <button
                   onClick={() => playNote("D#4")}
                   className="absolute bg-gray-900 shadow-lg text-white h-32 w-8 rounded-b-md active:bg-gray-700 transition-all duration-75 z-20 flex items-end justify-center pb-2 hover:brightness-110"
-                  style={{ left: '113px' }}
+                  style={{ left: '113px',  top:'16px' }}
                 >
                  
                 </button>
@@ -119,7 +119,7 @@ export default function Piano() {
                 <button
                   onClick={() => playNote("F#4")}
                   className="absolute bg-gray-900 shadow-lg text-white h-32 w-8 rounded-b-md active:bg-gray-700 transition-all duration-75 z-20 flex items-end justify-center pb-2 hover:brightness-110"
-                  style={{ left: '225px' }}
+                  style={{ left: '225px' , top:'16px' }}
                 >
                  
                 </button>
@@ -128,7 +128,7 @@ export default function Piano() {
                 <button
                   onClick={() => playNote("G#4")}
                   className="absolute bg-gray-900 shadow-lg text-white h-32 w-8 rounded-b-md active:bg-gray-700 transition-all duration-75 z-20 flex items-end justify-center pb-2 hover:brightness-110"
-                  style={{ left: '281px' }}
+                  style={{ left: '281px' , top:'16px' }}
                 >
                  
                 </button>
@@ -137,7 +137,7 @@ export default function Piano() {
                 <button
                   onClick={() => playNote("A#4")}
                   className="absolute bg-gray-900 shadow-lg text-white h-32 w-8 rounded-b-md active:bg-gray-700 transition-all duration-75 z-20 flex items-end justify-center pb-2 hover:brightness-110"
-                  style={{ left: '337px' }}
+                  style={{ left: '337px' , top:'16px' }}
                 >
                  
                 </button>

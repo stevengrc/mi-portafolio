@@ -12,7 +12,7 @@ export default function About() {
       {/* Texto */}
       <div className="sm:w-1/2 text-center md:text-left">
         <h2 className="text-3xl font-bold mb-6 text-primary flex items-center justify-center md:justify-start gap-2">
-          Sobre mí <span className="text-2xl">🇭🇳</span>
+          Sobre mí 
         </h2>
         <p className="text-gray-300 leading-relaxed mb-4">
           Soy{" "}

@@ -12,7 +12,7 @@ function App() {
   const [snow, setSnow] = useState(false);
 
   return (
-    <div className="text-white font-sans relative">
+    <div className="text-white font-sans relative overflow-x-hidden">
 
       
       {snow && (

@@ -7,7 +7,7 @@ export default function Contact() {
           ¿Quieres colaborar o tienes una idea interesante? Escríbeme:
         </p>
         <a
-          href="mailto:tuemail@ejemplo.com"
+          href="mailto:juniorgarcialagos@gmail.com"
           className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-500 transition-colors duration-700 ease-in-out"
         >
           Enviar correo

@@ -30,13 +30,23 @@ export default function Projects() {
       id: 1,
       nombre: "Gestión de Oficios",
       descripcion:
-        "Sistema para la gestión y asignación de oficios con roles y autenticación segura.",
+        "Sistema para la gestión de oficios academicos, asignación de oficios con roles, permisos y autenticación segura.",
       imagen: "/img/oficios.PNG",
       enlace: "https://unah-oficios-dev.netlify.app/",
       tecnologias: ["FastAPI", "React", "PostgreSQL","Daisy UI"],
     },
     {
       id: 2,
+      nombre: "Nodo",
+      descripcion:
+        "Plataforma para gestionar solicitudes y pagos de préstamos con panel de control y notificaciones automáticas.",
+      imagen: "/img/nodo.PNG",
+      enlace: "https://presta-nodo.pages.dev/",
+      tecnologias: ["React", "Express", "PostgreSQL", "Tailwind CSS"],
+    }
+    ,
+    {
+      id: 3,
       nombre: "Gestión de Inventarios",
       descripcion:
         "Panel para control de consumibles con historial de movimientos y búsqueda avanzada.",
@@ -44,15 +54,7 @@ export default function Projects() {
       enlace: "#",
       tecnologias: ["React", "Tailwind CSS", "Flask", "MySQL"],
     },
-    {
-      id: 3,
-      nombre: "Nodo",
-      descripcion:
-        "Plataforma para gestionar solicitudes y pagos de préstamos con panel de control y notificaciones automáticas.",
-      imagen: "/img/nodo.PNG",
-      enlace: "https://presta-nodo.pages.dev/",
-      tecnologias: ["React", "Express", "PostgreSQL", "Tailwind CSS"],
-    },
+    
     
   ];
 
@@ -95,7 +97,7 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="text-cyan-400 hover:underline"
             >
-              Ver proyecto →
+             { proyecto.enlace == "#" ? "Proximamente": "Ver proyecto →" } 
             </a>
           </div>
         ))}

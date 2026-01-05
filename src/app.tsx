@@ -26,7 +26,7 @@ function App() {
   onClick={() => setSnow(!snow)}
   className="fixed bottom-6 right-6 md:bottom-4 md:right-4 z-50 bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-3 md:px-4 md:py-2 rounded-full shadow-lg transition-all text-lg md:text-base"
 >
-  {snow ? "Detener" : "❄️"}
+  {snow ? "🚦" : "❄️"}
 </button>
 
       <Navbar />

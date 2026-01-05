@@ -1,6 +1,9 @@
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gray-900 text-white py-2 m-3">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
@@ -33,7 +36,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-sm mb-4 mt-4 md:mb-0">
-          © 2025 Todos los derechos reservados.
+          © {new Date().getFullYear()} {t("footer.rights")}
         </p>
       </div>
     </footer>

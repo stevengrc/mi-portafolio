@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm",
+    "description": "Systems Engineer passionate about web development, modern interfaces, and technology.",
+    "cta": "View my projects"
+  },
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "about": {
+    "title": "About me",
+    "description1": {
+      "part1": "I am a",
+      "career": "systems engineer",
+      "part2": "graduated from",
+      "university": "National Autonomous University of Honduras (UNAH)",
+      "part3": "I have experience in web development",
+      "stack": "full stack, Node.js, React, FastAPI and PostgreSQL"
+    },
+    "description2": "I am passionate about creating innovative, efficient, and user-centered digital solutions.",
+    "imageAlt": "Profile picture"
+  },
+  "piano": {
+    "text1": {
+      "part1": "One of my",
+      "hobby": "hobbies",
+      "part2": "is",
+      "music": "music",
+      "part3": "I enjoy playing different musical instruments, such as the",
+      "instrument": "piano"
+    },
+    "text2": {
+      "title": "Try playing the piano!",
+      "description": "It has a classic sound inspired by 90s pianos."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View project →",
+    "comingSoon": "Coming soon",
+    "items": {
+      "oficios": {
+        "title": "Official Documents Management",
+        "description": "System for managing academic documents with role assignment, permissions, and secure authentication."
+      },
+      "nodo": {
+        "title": "Nodo",
+        "description": "Platform to manage loan requests and payments with a dashboard and automatic notifications."
+      },
+      "inventarios": {
+        "title": "Inventory Management",
+        "description": "Dashboard for consumables control with movement history and advanced search."
+      }
+    }
+  },
+   "contact": {
+    "title": "Contact",
+    "subtitle": "Want to collaborate or have an interesting idea? Write to me:",
+    "button": "Send email"
+  }
+}

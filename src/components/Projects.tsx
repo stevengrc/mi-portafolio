@@ -1,13 +1,18 @@
-import { useEffect, useRef, } from "react";
+import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   const sectionRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-     if (!sectionRef.current) return;
+    if (!sectionRef.current) return;
+
     gsap.fromTo(
       sectionRef.current.children,
       { y: 80, opacity: 0 },
@@ -28,34 +33,28 @@ export default function Projects() {
   const proyectos = [
     {
       id: 1,
-      nombre: "Gestión de Oficios",
-      descripcion:
-        "Sistema para la gestión de oficios academicos, asignación de oficios con roles, permisos y autenticación segura.",
+      nombre: t("projects.items.oficios.title"),
+      descripcion: t("projects.items.oficios.description"),
       imagen: "/img/oficios.PNG",
       enlace: "https://unah-oficios-dev.netlify.app/",
-      tecnologias: ["FastAPI", "React", "PostgreSQL","Daisy UI"],
+      tecnologias: ["FastAPI", "React", "PostgreSQL", "Daisy UI"],
     },
     {
       id: 2,
-      nombre: "Nodo",
-      descripcion:
-        "Plataforma para gestionar solicitudes y pagos de préstamos con panel de control y notificaciones automáticas.",
+      nombre: t("projects.items.nodo.title"),
+      descripcion: t("projects.items.nodo.description"),
       imagen: "/img/nodo.PNG",
       enlace: "https://presta-nodo.pages.dev/",
       tecnologias: ["React", "Express", "PostgreSQL", "Tailwind CSS"],
-    }
-    ,
+    },
     {
       id: 3,
-      nombre: "Gestión de Inventarios",
-      descripcion:
-        "Panel para control de consumibles con historial de movimientos y búsqueda avanzada.",
+      nombre: t("projects.items.inventarios.title"),
+      descripcion: t("projects.items.inventarios.description"),
       imagen: "/img/prestamos.jpg",
       enlace: "#",
       tecnologias: ["React", "Tailwind CSS", "Flask", "MySQL"],
     },
-    
-    
   ];
 
   return (
@@ -64,7 +63,9 @@ export default function Projects() {
       ref={sectionRef}
       className="py-24 max-w-6xl mx-auto px-6"
     >
-      <h2 className="text-3xl font-bold mb-8 text-primary">Proyectos</h2>
+      <h2 className="text-3xl font-bold mb-8 text-primary">
+        {t("projects.title")}
+      </h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {proyectos.map((proyecto) => (
@@ -77,8 +78,14 @@ export default function Projects() {
               alt={proyecto.nombre}
               className="w-full h-40 object-cover rounded-lg mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">{proyecto.nombre}</h3>
-            <p className="text-gray-400 mb-3">{proyecto.descripcion}</p>
+
+            <h3 className="text-xl font-semibold mb-2">
+              {proyecto.nombre}
+            </h3>
+
+            <p className="text-gray-400 mb-3">
+              {proyecto.descripcion}
+            </p>
 
             <div className="flex flex-wrap gap-2 mb-4">
               {proyecto.tecnologias.map((tec, i) => (
@@ -97,7 +104,9 @@ export default function Projects() {
               rel="noopener noreferrer"
               className="text-cyan-400 hover:underline"
             >
-             { proyecto.enlace == "#" ? "Proximamente": "Ver proyecto →" } 
+              {proyecto.enlace === "#"
+                ? t("projects.comingSoon")
+                : t("projects.viewProject")}
             </a>
           </div>
         ))}

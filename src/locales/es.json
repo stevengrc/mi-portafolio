@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "greeting": "Hola, soy",
+    "description": "Ingeniero en Sistemas apasionado por el desarrollo web, las interfaces modernas y la tecnología.",
+    "cta": "Ver mis proyectos"
+  }
+  ,
+  "navbar": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+  ,
+  "about": {
+    "title": "Sobre mí",
+    "description1": {
+      "part1": "Soy",
+      "career": "ingeniero en sistemas",
+      "part2": "graduado de la",
+      "university": "Universidad Nacional Autónoma de Honduras (UNAH)",
+      "part3": "Tengo experiencia en desarrollo web",
+      "stack": "full stack, Node.js, React, FastAPI y PostgreSQL"
+    },
+    "description2": "Me apasiona crear soluciones digitales innovadoras, eficientes y centradas en la experiencia del usuario.",
+    "imageAlt": "Foto de perfil"
+  },
+  "piano": {
+    "text1": {
+      "part1": "Uno de mis",
+      "hobby": "hobbies",
+      "part2": "es la",
+      "music": "música",
+      "part3": "Disfruto tocar diversos instrumentos musicales, como el",
+      "instrument": "piano"
+    },
+    "text2": {
+      "title": "¡Prueba tocando el piano!",
+      "description": "Tiene un sonido clásico inspirado en los pianos de los 90s."
+    }
+  },
+   "projects": {
+    "title": "Proyectos",
+    "viewProject": "Ver proyecto →",
+    "comingSoon": "Próximamente",
+    "items": {
+      "oficios": {
+        "title": "Gestión de Oficios",
+        "description": "Sistema para la gestión de oficios académicos, asignación de roles, permisos y autenticación segura."
+      },
+      "nodo": {
+        "title": "Nodo",
+        "description": "Plataforma para gestionar solicitudes y pagos de préstamos con panel de control y notificaciones automáticas."
+      },
+      "inventarios": {
+        "title": "Gestión de Inventarios",
+        "description": "Panel para control de consumibles con historial de movimientos y búsqueda avanzada."
+      }
+    }
+  },
+   "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Quieres colaborar o tienes una idea interesante? Escríbeme:",
+    "button": "Enviar correo"
+  }
+}

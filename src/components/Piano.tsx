@@ -1,5 +1,7 @@
 import * as Tone from "tone";
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
 
 interface Note {
   note: string;
@@ -8,6 +10,7 @@ interface Note {
 }
 
 export default function Piano() {
+  const { t } = useTranslation();
   const [isPlaying, setIsPlaying] = useState(false);
   const samplerRef = useRef<Tone.Sampler | null>(null);
 
@@ -64,14 +67,22 @@ export default function Piano() {
       <div className="w-full lg:w-1/2 text-center lg:text-left m-4 p-3">
         
         <p className="text-gray-300 leading-relaxed mb-4">
-          Una de mis <i>hobbies</i> es la <span className="text-cyan-400 font-semibold">música</span>. 
-          Disfruto tocar diversos instrumentos musicales, como el <span className="text-cyan-400 font-semibold">piano</span>
-
+          {t("piano.text1.part1")} <i>{t("piano.text1.hobby")}</i>{" "}
+          {t("piano.text1.part2")}{" "}
+          <span className="text-cyan-400 font-semibold">
+            {t("piano.text1.music")}
+          </span>
+          . {t("piano.text1.part3")}{" "}
+          <span className="text-cyan-400 font-semibold">
+            {t("piano.text1.instrument")}
+          </span>
         </p>
-        
+
         <p className="text-gray-300 leading-relaxed">
-          <span className="text-cyan-400 font-semibold">¡Prueba tocando el piano!</span> Tiene un 
-          sonido clásico inspirado en los pianos de los 90s.
+          <span className="text-cyan-400 font-semibold">
+            {t("piano.text2.title")}
+          </span>{" "}
+          {t("piano.text2.description")}
         </p>
       </div>
 
